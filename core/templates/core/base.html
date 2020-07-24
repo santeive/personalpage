@@ -1,0 +1,37 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+        <title>:: The blog of santeive | ::</title>
+        {% load static %}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'core/css/main.css' %}" />
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<div class="inner">
+                    <!-- Header -->
+                    <header id="header">
+                        <a href="#" class="logo"><strong>The blog of Santeive</strong></a>
+                        <ul class="icons">
+                            <li><a href="https://github.com/santeive" class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/robertofranciscogarcia/" class="icon brands fa-linkedin"><span class="label">Snapchat</span></a></li>
+                            <!-- <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li> -->
+                        </ul>
+                    </header>
+                    {% block content %}
+                    {% endblock %}
+				</div>
+			</div>
+		</div>
+		<!-- Scripts -->
+		<script src="{% static 'core/js/jquery.min.js' %}"></script>
+		<script src="{% static 'core/js/browser.min.js' %}"></script>
+		<script src="{% static 'core/js/breakpoints.min.js' %}"></script>
+		<script src="{% static 'core/js/util.js' %}"></script>
+		<script src="{% static 'core/js/main.js' %}"></script>
+	</body>
+</html>
