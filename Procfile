@@ -1,1 +1,1 @@
-web: gunicorn santeive.wsgi --log-file-
+web: gunicorn santeive.wsgi --log-file -
