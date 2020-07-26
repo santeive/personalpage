@@ -13,7 +13,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 """ DEBUG = config('DEBUG', cast=bool) """
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.santeive.me', '127.0.0.1', 'santeiveblg.herokuapp.com']
 
@@ -27,7 +27,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'whitenoise.runserver_nostatic'
     'core',
 ]
 
@@ -110,7 +109,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 # My Static Files
-
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATIC_URL = '/static/'
 
