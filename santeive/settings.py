@@ -12,8 +12,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-""" DEBUG = config('DEBUG', cast=bool) """
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['www.santeive.me', '127.0.0.1', 'santeiveblg.herokuapp.com']
 
