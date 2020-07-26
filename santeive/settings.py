@@ -15,7 +15,7 @@ SECRET_KEY = config('SECRET_KEY')
 """ DEBUG = config('DEBUG', cast=bool) """
 DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['www.santeive.me']
 
 
 # Application definition
