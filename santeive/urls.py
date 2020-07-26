@@ -8,5 +8,5 @@ urlpatterns = [
     #Para la app core
     path('', include('core.urls')),
     #Para nuestro admin
-    path('admin/', admin.site.urls),
+    path('elsante/', admin.site.urls),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
