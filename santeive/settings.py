@@ -13,7 +13,7 @@ SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 """ DEBUG = config('DEBUG', cast=bool) """
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['www.santeive.me', '127.0.0.1', 'santeiveblg.herokuapp.com']
 
@@ -116,7 +116,7 @@ STATIC_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
