@@ -15,7 +15,7 @@ SECRET_KEY = config('SECRET_KEY')
 """ DEBUG = config('DEBUG', cast=bool) """
 DEBUG = True
 
-ALLOWED_HOSTS = ['santeive.me', '127.0.0.1', 'santeiveblg.herokuapp.com']
+ALLOWED_HOSTS = ['www.santeive.me', '127.0.0.1', 'santeiveblg.herokuapp.com']
 
 
 # Application definition
